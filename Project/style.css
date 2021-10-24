@@ -1,0 +1,234 @@
+body {
+     margin: 0; 
+     width:inherit;
+     overflow: hidden;
+     box-sizing: border-box;
+    }
+h1, h2, h3, h4, h5, h6, p, button, a{
+    font-family: 'DroidArabicKufiRegular' !important; 
+}
+.header {
+    background-color: #F6F6F6;
+    padding: 1rem ;
+}
+.header img{
+    width: 14rem;
+    height: 100%;
+    margin-left: 15rem;
+    margin-right: 1rem;
+}
+.header h3{
+    font-weight: bold;
+    font-size: 25px;
+    padding-top: 4.5rem;
+    padding-right: 14rem;
+    color: #313131;
+}
+.content{
+    margin-top: 41px !important;
+    margin-right: 1rem !important;
+}
+.sidebar{
+    margin-left: 2rem;
+}
+.sidebar h6{
+    font-size: 25px;
+    font-weight: bold;
+    border-right: 4px solid #07533A;
+    background-color: #EFEFEF;
+    padding: 0.5rem;
+    text-align: right;
+}
+.content-md ul{
+    margin-right: 31rem !important;
+}
+.content-md h6{
+    font-size: 30px;
+    font-weight: bold;
+    border-bottom: 1px solid #07533A;
+    width: 21rem;
+    text-align: center !important;
+    margin-right: 39rem !important;
+
+    padding: 0rem 0.5rem 0.5rem 0.5rem;
+}
+.accordion-button:focus{
+    border-color: none !important;
+    box-shadow: none !important;
+}
+.nav-pills{
+    margin-right: 0 !important;
+    padding-right: 0 !important;
+    margin-top: 1.5rem !important;
+}
+.nav-pills .nav-link{
+    color: #313131;
+    border: 1px solid #707070 !important;
+    margin-left: 1rem;
+    padding: 0.5rem 3rem 0.5rem 3rem;
+}
+.nav-pills .nav-link:hover{
+    color: #313131;
+}
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link{
+    background-color: #07533A !important;
+    border-color:  #07533A !important;
+}
+
+.accordion-button{
+    background-color: #F1F1F1 !important;
+}
+.accordion-button{
+    color: #8A8A8A !important;
+}
+.accordion-button:not(.collapsed){
+    color: #313131 !important;
+}
+.accordion-button:not(.collapsed)::after {
+    background-image: none !important;
+}
+.accordion-button::after {
+    margin-right: 2rem ;
+    background-image: none !important;  
+
+}
+.angle-down{
+    margin-left: 1rem !important;
+    vertical-align:middle;
+    width: 0.8rem;;
+    background-color: transparent !important;
+}
+.accordion-header{
+    background-color:#F1F1F1 ;
+}
+.accordion-body{
+    padding: 0 !important;
+}
+.lv2Acc{
+    width: 100% !important;
+    border-radius: 0 !important;
+    color: white !important;
+    border: 0 !important;
+    text-align: right !important;
+    padding-right: 2rem !important;
+    font-size: 15px;
+    padding-top: 0.8rem !important;
+    transition: 0.2s !important;
+    padding-bottom: 0.8rem !important;
+}
+.lv2AccCont{
+    background-color: #bdbdbd !important;
+}
+.card-body .btn{
+    text-align: right !important;
+    width: 100% !important;
+    padding: 0.8rem 3rem 0.8rem 1rem !important;
+    border-bottom: 1px solid #BEBEBE;
+    border-radius: 0 !important;
+}
+.card-body{
+    padding: 0 !important;
+}
+.card-body .btn:last-child{
+    border-bottom: none !important;
+
+}
+.card{
+    border-radius: 0 !important;
+    border:0 !important;
+}
+.line{
+    margin-left: 1rem;
+}
+.toggleColor{
+    background-color: #727272 !important;
+    transition: 0.2s !important;
+}
+.toggleColor2{
+    color: white !important;
+    background-color: #07533A !important;
+    transition: 0.2s !important;
+}
+.btn-primary{
+    background-color: transparent !important;
+}
+.arrowFlip{
+    transform: rotate(180deg);
+}
+.btn-check:focus + .btn, .btn:focus{
+    box-shadow: none !important;
+}
+@media screen and (max-width:1600px) {
+    .header img{
+        width: 12rem;
+        height: 100%;
+        margin-left: 1rem;
+        margin-right: 0.5rem !important;
+    }
+    .header h3{
+        font-weight: bold;
+        font-size: 20px;
+        padding-top: 4.5rem;
+        padding-right: 26rem;
+        color: #313131;
+    }
+    .accordion-button{
+        font-size: 0.8rem !important;
+        text-align: right;
+    }
+    .content-md ul{
+        margin-right:21rem !important;
+    }
+    .content-md h6{
+        font-size: 30px;
+        font-weight: bold;
+        border-bottom: 1px solid #07533A;
+        width: 21rem;
+        text-align: center !important;
+        margin-right: 28rem !important;
+    
+        padding: 0rem 0.5rem 0.5rem 0.5rem;
+    }
+    .lv2Acc{
+        font-size: 0.7rem !important;
+    }
+    .card-body .btn {
+        font-size: 0.6rem !important;
+
+    }
+    .headerText{
+        font-size: 1.5rem !important;
+    }
+    .pills-home-tab{
+        font-size: 1rem !important;
+    }
+}
+@media screen and (max-width:1000px) {
+    .header img{
+        width: 6rem;
+        height: 100%;
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+    .header h3{
+        font-weight: bold;
+        font-size: 15px;
+        padding-top: 1.5rem;
+        padding-right: 14rem;
+        color: #313131;
+    }
+    .content-md ul{
+        margin-right:0rem !important;
+        margin-left:0rem !important;
+    }
+    .content-md h6{
+        font-size: 30px;
+        font-weight: bold;
+        border-bottom: 1px solid #07533A;
+        width: 21rem;
+        text-align: center !important;
+        margin-right: 7.5rem !important;
+    
+        padding: 0rem 0.5rem 0.5rem 0.5rem;
+    }
+}

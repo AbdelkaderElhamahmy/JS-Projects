@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" integrity="undefined" crossorigin="anonymous">
+    <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/droid-arabic-kufi" type="text/css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+    <title>Document</title>
+</head>
+<body>
+  
+    <header class="header row">
+        <img src="./images/logo.png" class="col-5 ">
+        <h3 class="col-7">ميكنة دورات العمل بهيئة الأوقاف المصرية</h3>
+    </header>
+    <section class="content d-flex">
+        <div class="sidebar col-lg-2 col-md-3 text-center">
+            <h6>الرئيسية</h6>
+            <div class="accordion" id="accordionExample">
+                <div class="accordion-item">
+                  <h2 class="accordion-header d-flex" id="headingOne">
+                    <button class="accordion-button collapsed" onclick="arrowFlipped(this);"  type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseExample">
+                        إدارة الملكية العقارية
+                    </button>
+                    
+                    <img src="./images/angle-down-solid.svg" class="angle-down"></img>
+                  </h2>
+                  <div id="collapseOne" class="accordion-collapse collapse " aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <div class="d-flex lv2AccCont ">
+                        <a class="btn btn-primary lv2Acc " onclick="arrowAndColor(this)" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample1" aria-expanded="false" aria-controls="collapseExample">
+                          دورة عمل تحصيل وقف
+                        </a>
+                        <img src="./images/angle-down-solid.svg" class="angle-down"></img>
+                      </div>
+                      <div class="collapse" id="collapseExample1">
+                        <div class="card card-body">
+                            <button class="btn" onclick="changelvl3Color(this)"><i class="fas fa-horizontal-rule"></i><span class="line">-</span>إنشاء ملف في الوزارة</button>
+                            <button class="btn" onclick="changelvl3Color(this)"><span class="line">-</span>تحصيل ملف</button>
+                            <button class="btn" onclick="changelvl3Color(this)"><span class="line">-</span>استلام</button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-body">
+                      <div class="d-flex lv2AccCont ">
+                        <a class="btn btn-primary lv2Acc"  onclick="arrowAndColor(this)" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample2" aria-expanded="false" aria-controls="collapseExample">
+                          دورة عمل استهلاك
+                        </a>
+                        <img src="./images/angle-down-solid.svg" class="angle-down"></img>
+                      </div>
+                      <div class="collapse" id="collapseExample2">
+                        <div class="card card-body">
+                            <button class="btn" onclick="changelvl3Color(this)"><span class="line">-</span >إنشاء ملف في الوزارة</button>
+                            <button class="btn" onclick="changelvl3Color(this)"><span class="line">-</span>تحصيل ملف</button>
+                            <button class="btn" onclick="changelvl3Color(this)"><span class="line">-</span>استلام</button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-body">
+                      <div class="d-flex lv2AccCont " >
+                        <a class="btn btn-primary lv2Acc"  onclick="arrowAndColor(this)" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample3" aria-expanded="false" aria-controls="collapseExample">
+                          دورة عمل
+                        </a>
+                        <img src="./images/angle-down-solid.svg" class="angle-down"></img>
+                      </div>
+                      <div class="collapse" id="collapseExample3">
+                        <div class="card card-body">
+                          <button class="btn" ><span class="line">-</span>إنشاء ملف في الوزارة</button>
+                          <button class="btn"><span class="line">-</span>تحصيل ملف</button>
+                          <button class="btn"><span class="line">-</span>استلام</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item ">
+                  <h2 class="accordion-header d-flex" id="headingTwo">
+                    <button class="accordion-button collapsed" onclick="arrowFlipped(this)" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        إدارة المشاريع
+                    </button>
+                    <img src="./images/angle-down-solid.svg" class="angle-down"></img>
+                  </h2>
+                  <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <div class="accordion-body">
+                        <div class="d-flex lv2AccCont">
+                          <a class="btn btn-primary lv2Acc" onclick="arrowAndColor(this)" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample4" aria-expanded="false" aria-controls="collapse">
+                            دورة عمل تحصيل وقف
+                          </a>
+                          <img src="./images/angle-down-solid.svg" class="angle-down"></img>
+                        </div>
+                        <div class="collapse" id="collapseExample4">
+                          <div class="card card-body">
+                              <button class="btn" onclick="changelvl3Color(this)"><i class="fas fa-horizontal-rule"></i><span class="line">-</span>إنشاء ملف في الوزارة</button>
+                              <button class="btn" onclick="changelvl3Color(this)"><span class="line">-</span>تحصيل ملف</button>
+                              <button class="btn" onclick="changelvl3Color(this)"><span class="line">-</span>استلام</button>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="accordion-body">
+                        <div class="d-flex lv2AccCont">
+                          <a class="btn btn-primary lv2Acc" onclick="arrowAndColor(this)" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample5" aria-expanded="false" aria-controls="collapseExample">
+                            دورة عمل استهلاك
+                          </a>
+                          <img src="./images/angle-down-solid.svg" class="angle-down"></img>
+                        </div>
+                        <div class="collapse" id="collapseExample5">
+                          <div class="card card-body">
+                              <button class="btn" onclick="changelvl3Color(this)"><span class="line">-</span>إنشاء ملف في الوزارة</button>
+                              <button class="btn" onclick="changelvl3Color(this)"><span class="line">-</span>تحصيل ملف</button>
+                              <button class="btn" onclick="changelvl3Color(this)"><span class="line">-</span>استلام</button>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="accordion-body">
+                        <div class="d-flex lv2AccCont">
+                          <a class="btn btn-primary lv2Acc" onclick="arrowAndColor(this)" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample6" aria-expanded="false" aria-controls="collapseExample">
+                            دورة عمل
+                          </a>
+                          <img src="./images/angle-down-solid.svg" class="angle-down"></img>
+                        </div>
+                        <div class="collapse" id="collapseExample6">
+                          <div class="card card-body">
+                            <button class="btn" onclick="changelvl3Color(this)"><span class="line">-</span>إنشاء ملف في الوزارة</button>
+                            <button class="btn" onclick="changelvl3Color(this)"><span class="line">-</span>تحصيل ملف</button>
+                            <button class="btn" onclick="changelvl3Color(this)"><span class="line">-</span>استلام</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header d-flex" id="headingThree">
+                    <button class="accordion-button collapsed" onclick="arrowFlipped(this)" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        إدارة الفاتورة
+                    </button>
+                    <img src="./images/angle-down-solid.svg" class="angle-down"></img>
+                  </h2>
+                  <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header d-flex" id="headingfour">
+                      <button class="accordion-button collapsed" onclick="arrowFlipped(this)" type="button" data-bs-toggle="collapse" data-bs-target="#collapsefour" aria-expanded="false" aria-controls="collapseTwo">
+                        إدارة الشئون الزراعية
+                      </button>
+                    <img src="./images/angle-down-solid.svg" class="angle-down"></img>
+                  </h2>
+                    <div id="collapsefour" class="accordion-collapse collapse" aria-labelledby="headingfour" data-bs-parent="#accordionExample">
+                      <div class="accordion-body">
+                      </div>
+                    </div>
+                  </div>
+              </div>
+        </div>
+        <div class="content-md col-lg-10 col-md-9 text-center ">
+            <h6 class="headerText">إنشاء ملف في الوزارة</h6>
+            <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">بيانات الوقف</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">بيانات الوقف</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">بيانات الوقف</button>
+                </li>
+              </ul>
+              <div class="tab-content" id="pills-tabContent">
+                <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">...</div>
+                <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">...</div>
+                <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">...</div>
+              </div>
+              
+        </div>
+    </section>
+   
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js"  crossorigin="anonymous"></script>
+    <script type="text/javascript" src="script.js"></script>   
+</body>
+</html>
